@@ -1,0 +1,36 @@
+﻿/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light gray background color */
+    border-bottom: 1px solid #dee2e6; /* Border color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Navigation Links Styles */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 20px 0;
+}
+
+    .footer p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .footer a {
+        color: #007bff; /* Bootstrap's primary color */
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }

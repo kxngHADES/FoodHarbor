@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FoodHarbor.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <title>Food Harbor</title>
+    <link href="lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="lib/Bootstrap/jss/jquery-3.3.1.slim.min.js"></script>
+    <script src="lib/Bootstrap/jss/popper.min.js"></script>
+    <script src="lib/Bootstrap/jss/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="lib/Bootstrap/jss/savechanges.js"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            display: block;
+            color: #0099FF;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+       <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Food Harbor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a> <!--Takes to home page-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recipes</a> <!--Takes to Recipe page-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a> <!--Takes to About page-->
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.aspx">Login</a> <!--Takes to Login page-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.aspx">Register</a> <!--Takes to Register page-->
+                </li>
+                <li class="nav-item">
+                    <strong><em>
+                        <center>
+                            <a href="profile.aspx"><img src="img/users.png" width="30"/></center>
+                        <asp:Label CssClass="auto-style1" href="profile.aspx" ID="lblUser" runat="server" Text="Name"></asp:Label></em></strong><!--Takes to User Profile page-->
+                </a>
+                </li>
+            </ul>
+                </div>
+            </nav>
+        </div>
+    </form>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <footer>
+        <div class="footer bg-dark">
+        <div class="container text-center py-3">
+            <p><span class="text-white">&copy; 2023 Food Harbor. All rights reserved By Ndaedzo Mudau. |</span> 
+                <a href="Default.aspx">Home</a> | <!--Takes to home page-->
+                <a href="Recipes.aspx">Recipes</a> | <!--Takes to Recipes page-->
+                <a href="About.aspx">About</a> <!--Takes to About page-->
+            </p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
+
